@@ -22,10 +22,8 @@ for i in range(0,objetos):
 v=v/2 #capacidad mochila
 
 print("\ncap. mochila: ",v)
-print("pesos objetos:")
-print(pesos)
-print("valores objetos: ")
-print(valores)
+print("pesos objetos:\n",pesos)
+print("valores objetos: \n",valores)
 print("\npoblación original:")
 for k in range(0,len(pob)):
     print(pob[k])
@@ -78,6 +76,7 @@ for i in range(0,cromosomas):
 del pesos
 del pesos_cromosomas
 del knap_full
+del v
 profit=[]
 
 for i in range(0,cromosomas):
@@ -97,8 +96,7 @@ for k in range(0,len(pob)):
         piscina.append(pob[k])
     print(k,'\t',pob[k],'\t',profit[k][0])
 
-print('piscina apareamiento: ')
-print(piscina)
+print('piscina apareamiento: \n',piscina)
 
 flag=True
 padre=[]
