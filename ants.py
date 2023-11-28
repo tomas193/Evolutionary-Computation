@@ -2,13 +2,8 @@ import random
 
 weights=[70,73,77,80,82,87,90,94,98,106,110,113,115,118,120]
 profits=[135,139,149,150,156,163,173,184,192,201,210,214,221,229,240]
-print('\n')
 
 #objeto=[weight,profit]
-#cada hormiga trabajará con 3 objetos aleatorios
-#cada hormiga elegira uno de esos 3 objetos de manera probabilistica
-#el objeto elegido se añadira a una lista de solucion parcial
-#se tendran 10 soluciones parciales, se escogerá a la que tenga mejor profit
 
 c=750 #knapsack capacity
 tasa_ev=0.5
@@ -37,7 +32,6 @@ def select_objects():
         mus.append(u)
         suma+=u
         objetos.append(objeto) #insertar objeto con peso y profit a una lista temporal
-
     del objeto
     del num
 
@@ -50,16 +44,11 @@ def select_objects():
     #print(num)
 
     if num<lim1:
-        #print(0,'-',lim1)
         return(objetos[0])
     elif lim1<=num<lim2:
-        #print(lim1,'-',lim2)
         return(objetos[1])
     else:
-        #print(lim2,'-',1)
         return(objetos[2])
-
-    #print(objetos,suma)
 
 def partial_sol():
     vc=c
@@ -69,7 +58,6 @@ def partial_sol():
     datos=[] #[peso total, profit total]
     while vc>0:
         objeto=select_objects()
-        #print('weight',objeto[0],'profit',objeto[1])
         parcial.append(objeto)
         vc-=objeto[0]
         pp+=objeto[0]
@@ -78,7 +66,6 @@ def partial_sol():
     datos.append(pp)
     datos.append(profit) 
     parcial.sort()
-
     return(parcial,datos)
 
 def reparacion():
@@ -86,8 +73,6 @@ def reparacion():
     reparar=partial_sol()
     parcial=reparar[0]
     datos=reparar[1]
-    #print(datos)
-    #print(parcial)
 
     for i in parcial:
         if i[0]>=datos[0]-c:
@@ -95,9 +80,6 @@ def reparacion():
             datos[0]-=i[0]
             parcial.pop(parcial.index(i))
             break
-
-    #print('\n',datos)
-    #print(parcial)
     sol=[]
     sol.append(parcial)
     sol.append(datos)
@@ -118,8 +100,6 @@ def soluciones():
     idx=datos.index(max(datos))
     solucion.append(sol[idx])
     solucion.append(datos[idx])
-    #solucion=[profit,peso]
-    #print('profit: ',solucion[1][0], 'peso: ',solucion[1][1],'\t',solucion[0])
     return(solucion)
 
 def solucion_final():
@@ -138,6 +118,3 @@ def solucion_final():
     print('profit: ',solucion[1][0], 'peso: ',solucion[1][1],'\t',solucion[0])
 
 solucion_final()
-
-print('\n')
-print('end')
