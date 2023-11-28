@@ -3,8 +3,6 @@ import random
 weights=[70,73,77,80,82,87,90,94,98,106,110,113,115,118,120]
 profits=[135,139,149,150,156,163,173,184,192,201,210,214,221,229,240]
 
-#objeto=[weight,profit]
-
 c=750 #knapsack capacity
 tasa_ev=0.5
 hormigas=10
@@ -118,3 +116,5 @@ def solucion_final():
     print('profit: ',solucion[1][0], 'peso: ',solucion[1][1],'\t',solucion[0])
 
 solucion_final()
+
+#Jorge Tomás Araujo González 2023
