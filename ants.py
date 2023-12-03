@@ -37,7 +37,6 @@ def select_objects():
     lim1=probas[0]
     lim2=lim1+probas[1]
     num=(random.uniform(0,1))
-    #print(num)
 
     if num<lim1:
         return(objetos[0])
