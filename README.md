@@ -5,7 +5,7 @@ Evolutionary computation is a subfield of artificial intelligence that involves 
 
 Also, the repository contains the Ant Colony Optimization Algorithm, a probabilistic technique used for solving computational problems that can be reduced to finding good paths through graphs. It is inspired by the behavior of real ants in finding shortest paths from their colony to a food source. ACO is particularly effective for discrete optimization problems, where the goal is to find an optimal ordering or selection of elements.
 
-## Contents
+## Content
 This repository contains Python scripts covering:
 - Sorting algorithms
 - Search algorithms
