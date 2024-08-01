@@ -1,4 +1,4 @@
-# PyStructAlgo
+# Ant Colony Algorithm for the Knapsack Problem
 
 ## Overview
 PyStructAlgo offers a curated collection of Python implementations for various algorithms and data structures, compiled from academic coursework in the 'Structure of Algorithms' program. It's a resource for students and programming enthusiasts to explore algorithmic solutions and data structures in Python.
