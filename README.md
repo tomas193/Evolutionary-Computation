@@ -7,10 +7,9 @@ Also, the repository contains the Ant Colony Optimization (ACO) Algorithm, a pro
 
 ## Content
 This repository contains Python scripts covering:
-- Sorting algorithms
-- Search algorithms
-- Data structures like trees, graphs, and linked lists
-- And more
+- Selection methods
+- Paper about ACO Algorithm 
+- Implemented ACO Algorithm with the Knapsack Problem 
 
 Each script is documented for ease of understanding and practical application.
 
