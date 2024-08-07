@@ -9,7 +9,7 @@ Also, the repository contains the Ant Colony Optimization (ACO) Algorithm, a pro
 This repository contains Python scripts covering:
 - Selection methods
 - Paper about ACO Algorithm 
-- Implemented ACO Algorithm with the Knapsack Problem 
+- Implemented ACO Algorithm for the Knapsack Problem 
 
 Each script is documented for ease of understanding and practical application.
 
